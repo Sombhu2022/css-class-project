@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <h3>photo <input type="file"  ></h3>
+    <h3>Name<input type="name" placeholder="enter your name" required></h3>
+    <h3>email<input type="mail" placeholder="enter your email" required ></h3>
+    <h3>password <input type="password" placeholder="enter your passoword" required ></h3>
+    <h3>confirm password <input type="password"  placeholder="enter your password" required></h3>
+    <!-- <h3>phone <input type="number"  placeholder="enter your phone number" required></h3> -->
+    <h3>phone number<input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" title="Phone number format: XXX-XXX-XXXX" required></h3>
+    <h3>dob <input type="date"  placeholder="enter your date" required></h3>
+    <h1>gender:- <label for="male">male</label>
+        <input id="male" type="radio" name="gender" value="male">
+        <label for="female">female</label>
+        <input id="female" type="radio" name="gender" value="female"></h1>
+        select your college
+        <select name="college name" id="college name">
+            <option value="panskura college">panskura college</option>
+            <option value="belda college"> belda college</option>
+            <option value="ghatal college">ghatal college</option>
+            <option value="saldanga college">saldanga college</option>
+            <option value="panskura college">panskura college</option>
+
+        </select>
+        <br>
+        <br>
+        select your course
+        <select name="college course" id="college course">
+            <option value="beng hons">bengali hons</option>
+            <option value="english hons"> english hons</option>
+            <option value="zoology">zoology  hons</option>
+            <option value="math hons">math hons
+            </option>
+            <option value="science hons">science hons</option>
+
+        </select>
+        <br>
+        <br>
+        search
+        <input type="search">
+   
+    
+    
+</body>
+</html>

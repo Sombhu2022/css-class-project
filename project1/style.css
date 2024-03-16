@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header style */
+nav{
+    
+    /* border: solid 1px rgb(33, 229, 128); */
+    margin-top: 5px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.grid{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-container{
+
+}
+
+.link{
+    margin: 10px;
+    text-decoration: none;
+    color: #8D8D8D;
+    font-weight: 500;
+}
+.link:hover , #home{
+    color: black;
+}
+#home:hover{
+    color: #8D8D8D;
+}
+.button-container a{
+    text-decoration: none;
+    background: #00A6FB;
+    padding:10px 20px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 1px 1px 20px 5px rgba(155, 155, 155, 0.546);
+}
+
+/* 
+img section */
+.img-section{
+    /* border: solid 1px red; */
+    background: url('./back1.png');
+    /* object-fit: cover; */
+    background-size: center;
+    background-position: center;
+    padding: 50px 10px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.info-container{
+    height: 200px;
+    width: 700px;
+    /* border: solid 1px red; */
+}
+.info-container h1{
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+}
+.info-container p{
+    /* font-size: 20px; */
+    color: white;
+    margin:10px 0 ;
+}
+
+.card-container{
+    /* border: solid 1px red; */
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    /* border: solid 1px red; */
+    width: 250px;
+    padding: 5px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+}
+.card p{
+    text-align: center;
+}
+
+/* team-info-section styling */
+.team-info-section{
+    /* border: solid 1px red; */
+    margin-top: 50px;
+}
+.team-info-section h1{
+    text-align: center;
+    font-size: 30px;
+    color: #001F3F;
+}
+.profile-info-container{
+    /* border: solid 1px red; */
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+}
+.profile-info{
+    width: 350px;
+    border: solid 1px #8D8D8D;
+    padding:7px 10px;
+    border-radius: 10px;
+}
+
+.name-container{
+    /* border: solid 1px red ; */
+    display: flex;
+    align-items: center;
+}
+.name-info{
+    padding:0 10px;
+}
+.name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.roal{
+    color: #5F5F5F;
+}
+
+.extra-info
+{
+    color: #5F5F5F;
+    padding: 10px 0;
+
+}
+
+.links{
+    padding: 10px 0;
+}
+.links a{
+    padding: 0 5px;
+    text-decoration: none;
+    color: #3D445C;
+    font-size: 20px;
+}
+
+
+.lock-container{
+    /* border: solid 1px red; */
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background:rgb(185, 195, 212) ;
+    gap: 60px;
+    
+}
+.lock-image{
+   height: auto;
+   width:500px;
+   padding-inline: 10px;
+}
+#info-text-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info-text h1{
+    font-size: 30px;
+    font-weight: 800;
+    color: #001F3F;
+}
+.info-text p{
+    font-size: 20px;
+    color: #5F5F5F;
+}
+.info-text{
+    width:600px;
+    /* align-items: center; */
+    padding: 10px;
+    /* border: solid 1px red; */
+}
+
+@media (max-width:750px){
+    .lock-image{
+        width: 80vw;
+    }
+    
+}
+
+
+@media (max-width:700px){
+    nav{
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr  1fr;
+        height:auto;
+    }
+    .link-container{
+        grid-column-start: 1;
+        grid-column-end:5;
+        order: 3;
+    }
+    .logo-container{
+        order: 1;
+    }
+    .button-container{
+        order: 2;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+}
+
+@media (max-width:750px){
+    .img-section{
+        width: 100vw;
+    }
+    .info-container{
+        width: 90vw;
+    }
+    .card-container{
+        width: 90vw;
+    }
+}
+@media (max-width:430px){
+    .info-container{
+        height: auto;
+    }
+    
+}
+
+
+/* group section */
+
+.our-experience{
+    display: flex;
+    justify-content: center;
+    background-color: #25394D;
+    display: none;
+}
+
+.group-section{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: center;
+    position: relative;
+    border: solid 1px red;
+    width: 600px;
+}
+
+.group-section img{
+    width:100%;
+    height: auto;
+}
+.group-info{
+     width: 300px;
+     background: #00A6FB;
+     padding: 15px;
+     padding-block: 20px;
+     color: aliceblue;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     position: absolute;
+     right:-100px;
+}
+.group-info p{
+    font-size: 15px;
+}
+
+.group-info button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+ @media (max-width:830px){
+    .group-section{
+        width:80vw;
+    }
+ }
+
+
+
+/* .protective psychology section */
+
+.protective-psychology-section{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    background-color: #25394D;
+    min-height: 500px;
+    /* height: auto; */
+    
+    
+}
+
+.protective-psychology-info{
+    color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: solid 1px red; */
+}
+/* .protective-psychology-info p{
+    max-width: 500px;
+} */
+
+.protective-psychology-info h1{
+    font-size: 30px;
+}
+
+.image-and-feedback{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    left: 150px;
+    /* border: solid 1px red; */
+    width: 350px;
+}
+.image-and-feedback img{
+    width: 100%;
+}
+
+.feedback{
+    position: absolute;
+    background-color: white;
+    border: none;
+    right: 230px;
+    bottom:-50px;
+    width:80%;
+    /* border: solid 1px red; */
+    /* border: solid 1px black; */
+    
+}
+
+.cyber-section{
+    background-color: white;
+    
+}
+.cyber-section .protective-psychology-info{
+    color: black;
+}
+
+#feedback{
+    box-shadow: 1px 2px 20px 10px rgba(128, 128, 128, 0.548);
+ 
+}
+@media (max-width:1250px){
+ 
+      .protective-psychology-section{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding-bottom: 60px;
+      }
+      .protective-psychology-section  .protective-psychology-info{
+        width: 60vw;
+      }
+      
+    }
+    
+    @media (max-width:610px){
+        
+        .protective-psychology-section  .protective-psychology-info{
+          width: 80vw;
+        }
+    .image-and-feedback{
+        /* border: solid 1px red; */
+        width: 100vw;
+        left: 0px;
+        justify-content: center;
+    }
+    .image-and-feedback img{
+        width:80%;
+
+    }
+    .image-and-feedback .feedback{
+        width: 50%;
+        right: 0px;
+        width: 70%;
+    }
+}
+
+@media (max-width:320px){
+.protective-psychology-section  .protective-psychology-info{
+  width: 95vw;
+}
+.image-and-feedback{
+/* border: solid 1px red; */
+width: 100vw;
+left: 0px;
+justify-content: center;
+}
+.image-and-feedback img{
+width:95%;
+
+}
+.image-and-feedback .feedback{
+
+right: 50px;
+width: 80%;
+left: 0px;
+}
+
+}
+
+.review-section{
+    border: solid 1px red;
+    display: flex;
+    gap: 50px;
+    overflow: scroll;
+}
+.slider-maneger{
+    width: 50vw;
+}
