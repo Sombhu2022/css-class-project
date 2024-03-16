@@ -1,0 +1,95 @@
+/* class secector */
+*{
+    margin: 10px;
+}
+
+.div{
+    color: red;
+}
+
+/* id selector */
+#div1{
+    color: aquamarine;
+    display: none;
+}
+
+
+/* element selector */
+
+div{
+    border: solid 1px red;
+    
+    display: inline-block;
+    /* margin-top: 200px;
+    margin-left: 100px; */
+    /* margin-block: 30px;
+    margin-inline: 40px; */
+    /* margin: 10px 30px; */
+    /* padding: 10px;
+    padding-left: 20px;
+    padding-top: 30px; */
+    /* padding: 20px 50px; */
+}
+
+span{
+    height: 200px;
+    width: 500px;
+    display: inline-block;
+    border: solid 1px green;
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    font-size: 20px;
+}
+
+
+
+/* dimension  */
+
+/* height */
+/* width */
+
+div{
+    height: 100px;
+    width: 250px;
+}
+
+
+/* css unit */
+/* px  by default -16px  */
+span{
+    font-size: 20px;
+}
+/* % */
+div{
+    width: 50%;
+
+    font-size: 20px; 
+
+}
+/* em */
+div p{
+
+    font-size: 2em; 
+    /* width: 2em; */
+}
+
+/* rem */
+
+span{
+    /* 40px */
+    font-size: 2rem; 
+}
+
+span p{
+    /* 60px */
+    font-size: 3rem;
+}
+
+
+
+
+
+

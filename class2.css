@@ -1,0 +1,57 @@
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: black; */
+}
+img{
+    /* filter: brightness(100%); */
+    /* filter: blur(10px); */
+    /* filter: contrast(120%); */
+    /* filter: invert(0); */
+    /* filter: hue-rotate(45deg); */
+    width: 300px;
+    /* scale: 0.7; */
+    transition: ease 0.3s ;
+    
+}
+img:hover{
+    filter: grayscale(100%);
+    scale: 1.2;
+    
+}
+.img{
+    border: 1px solid black;
+    overflow: hidden;
+    /* background: whitesmoke; */
+}
+.img1:hover{
+    filter: drop-shadow(20px 20px 20px red);
+   
+}
+.img2:hover{
+    filter: blur(5px);
+}
+.image-container{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+p{
+    height: 800px;
+    width: 800px;
+    border: solid 1px red;
+    overflow:auto;
+    /* background-color: rgb(34, 255, 0); */
+    /* background-image:url("./img.png"); */
+    /* background-position:center; */
+    /* background-size:100%; */
+    /* background: url("./img.png") center 120%; */
+    /* background: linear-gradient( 95deg, rgba(9, 142, 231, 0.614) , transparent); */
+    /* filter: blur(4px); */
+    /* background: radial-gradient(red , green); */
+    display: none;
+
+}
